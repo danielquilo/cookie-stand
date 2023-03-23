@@ -1,0 +1,140 @@
+/* styles added to the * symbol will affect every element on the page  */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+    color: black;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+  }
+  
+  header {
+    background-color: pink;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .header-container {
+    padding: 1.5rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
+  }
+  
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  li:hover {
+    color: red;
+  }
+  
+  a {
+    text-decoration: none;
+    /* anchor element by default do not inherit from the parent, however if we add this value it will. */
+    color: inherit;
+  }
+  
+  .main-container {
+    padding-top: 1rem;
+  }
+  
+  .hero-img {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-text {
+    width: 90%;
+    max-width: 80ch;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .cookie-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img-container {
+    margin-bottom: 1rem;
+  }
+  
+  .cookie-img {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: bottom center;
+  }
+  
+  .img-text {
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: pink;
+  }
+  
+  .footer-container {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  /* This is a media query which will change my styles when the viewport is 700px or more */
+  @media (min-width: 700px) {
+    .header-container {
+      text-align: left;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    h1 {
+      margin: 0;
+    }
+  
+    li {
+      margin: 0 0 0 1rem;
+    }
+  
+    .main-container {
+      padding-top: 2rem;
+    }
+  
+    .cookie-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .img-container {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    h1 {
+      color: red;
+    }
+  }
