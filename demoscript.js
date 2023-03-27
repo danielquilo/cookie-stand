@@ -19,7 +19,7 @@ message = "Good night " + user;
 
 console.log(message);
 
-let arsenalFan = confirm("I am an arsenal fan, do tou support arsenal"  +  user + "?")
+let arsenalFan = confirm("I am an arsenal fan, do tour support arsenal"  +  user + "?")
 
 if(arsenalFan == true) {
     console.log("You're great");
